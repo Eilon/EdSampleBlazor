@@ -27,6 +27,7 @@ namespace EdSampleBlazor
 				{
 					services.AddBlazorWebView();
 					services.AddSingleton<WeatherForecastService>();
+					services.AddSingleton<CounterState>();
 				});
 		}
 	}

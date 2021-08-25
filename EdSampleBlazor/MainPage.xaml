@@ -5,10 +5,12 @@
              x:Class="EdSampleBlazor.MainPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
-    <b:BlazorWebView HostPage="wwwroot/index.html">
-        <b:BlazorWebView.RootComponents>
-            <b:RootComponent Selector="app" ComponentType="{x:Type local:Main}" />
-        </b:BlazorWebView.RootComponents>
-    </b:BlazorWebView>
-
+    <StackLayout>
+        <Label x:Name="CounterLabel" />
+        <b:BlazorWebView HostPage="wwwroot/index.html">
+            <b:BlazorWebView.RootComponents>
+                <b:RootComponent Selector="app" ComponentType="{x:Type local:Main}" />
+            </b:BlazorWebView.RootComponents>
+        </b:BlazorWebView>
+    </StackLayout>
 </ContentPage>
