@@ -7,11 +7,11 @@ namespace EdSampleBlazor
 {
 	public partial class App : Application
 	{
-		public App()
+		public App(CounterState counterState)
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new MainPage(counterState);
 		}
 	}
 }
