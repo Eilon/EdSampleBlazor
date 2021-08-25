@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EdSampleBlazor.WinUI": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  }
+}
